@@ -1,15 +1,63 @@
-# Godot 4+ specific ignores
-.godot/
+# ========== BINAIRES DU PLUGIN ==========
+!bin/**/*.dll
+!bin/**/*.lib
+!bin/**/*.gdextension
+!spritecutter/bin/**/*.dll
+!spritecutter/bin/**/*.lib
+!spritecutter/bin/**/*.gdextension
 
-# Godot-specific ignores
-.import/
-export.cfg
-export_credentials.cfg
+# Fichiers inutiles (debug & intermediaires)
+*.pdb
+*.exp
+*.obj
+*.o
+*.a
+*.idb
+*.ipdb
+*.iobj
+*.tmp
+*.obj.import
 
-# Imported translations (automatically generated from CSV files)
-*.translation
+# ========== GODOT ==========
+# Cache et importations Godot
+.spritecutter/.godot/
+.spritecutter/.import/
+spritecutter/.godot/
+spritecutter/.import/
+*.import/
 
-# Mono-specific ignores
-.mono/
-data_*/
-mono_crash.*.json
+# ========== GDExtension ==========
+godot-cpp/gen/
+godot-cpp/bin/
+
+# ========== SCONS ==========
+.sconsign.dblite
+*.sconsign
+__pycache__/
+*.pyc
+
+# ========== VISUAL STUDIO / MSVC ==========
+# Build outputs
+*.exe
+*.ilk
+*.log
+*.vcxproj.user
+*.suo
+*.sdf
+*.cache
+*.tlog/
+*.vs/
+*.VC.db
+*.VC.opendb
+*.ncb
+*.aps
+
+# Visual Studio Code
+.vscode/
+# JetBrains / CLion / Rider / ReSharper
+.idea/
+
+# ========== SYSTEME ==========
+.DS_Store
+Thumbs.db
+desktop.ini

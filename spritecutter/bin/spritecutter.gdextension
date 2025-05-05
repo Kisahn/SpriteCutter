@@ -1,0 +1,16 @@
+[configuration]
+entry_symbol = "GDExtensionInitializeSpriteCutter"
+compatibility_minimum = "4.4"
+reloadable = true ;hot-reload en debug
+
+[libraries]
+windows.editor.x86_32 = "res://bin/windows/spritecutter.windows.editor.x86_32.dll"
+windows.editor.x86_64 = "res://bin/windows/spritecutter.windows.editor.x86_64.dll"
+windows.template_release.x86_32 = "res://bin/windows/spritecutter.windows.template_release.x86_32.dll"
+windows.template_release.x86_64 = "res://bin/windows/spritecutter.windows.template_release.x86_64.dll"
+
+[icons]
+; On peut définir une icône de noeud / plugin. Ex : PlayerNode = "res://path/to/icon.svg"
+
+[dependencies]
+; si les librairies ont besoin d'autres librairies. Ex : windows.editor = { "res://bin/windows/other.dll" : "" }
